@@ -23,12 +23,12 @@ const ClassCard: React.FC<ClassCardProps> = ({ name, description, link }) => {
           borderRadius="md"
           p="4"
           mb="4"
-          width="30vh"
-          minHeight="13vh"
-          overflow="none"
-          fontSize="sm"
+          width="35vh"
+          maxHeight="53vh"
+          minHeight="21vh"
           fontWeight="300"
           boxShadow="lg" // added shadow
+          fontSize="md"
         >
           <Heading size="md" mb="2" fontWeight="400">
             {name}

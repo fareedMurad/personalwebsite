@@ -28,7 +28,7 @@ const ClubCard: React.FC<ClassCardProps> = ({
   const width = useBreakpointValue({
     base: "90vw",
     sm: "45vh",
-    md: "40vh",
+    md: "55vh",
   });
 
   const imageSize = useBreakpointValue({
@@ -56,11 +56,9 @@ const ClubCard: React.FC<ClassCardProps> = ({
           p="4"
           mb="4"
           width={width}
-          minHeight="13vh"
-          maxHeight="13vh"
+          minHeight="50vh"
           overflow="none"
           position="relative"
-          minH="35vh"
           boxShadow="lg"
         >
           <Flex direction="column" align="center">
@@ -68,7 +66,6 @@ const ClubCard: React.FC<ClassCardProps> = ({
               src={logo}
               alt={`${name} logo`}
               width={imageSize}
-              height={imageSize}
               objectFit="contain"
               mb="2"
               mt="1em"
@@ -78,13 +75,13 @@ const ClubCard: React.FC<ClassCardProps> = ({
               size={headingSize}
               mb="2"
               fontWeight="400"
-              textAlign="center"
+              // textAlign="center"
             >
               {name}
             </Heading>
           </Flex>
           <Text fontWeight="300" mb="1">
-            {description[0]}
+            {description[0]} 
           </Text>
           <UnorderedList textAlign="left">
             {description.slice(1).map((item, index) => (

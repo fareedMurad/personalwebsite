@@ -230,7 +230,7 @@ export default function About() {
                   link={classItem.link}
                 />
               ))}
-            </Stack>
+             </Stack>
           ))}
         </Stack>
         <ResumeModal isOpen={isOpen} onClose={onClose} />
