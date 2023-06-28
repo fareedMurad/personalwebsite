@@ -54,36 +54,38 @@ const companies = [
 const CompaniesSection = () => {
   return (
     <Box data-aos="fade-right">
-      <Heading size="md" textAlign="center" fontWeight="100">
-        Previous Work
-      </Heading>
-      <Box
-        display="flex"
-        flexDirection="column"
+    <Heading size="lg" textAlign="center" fontWeight="100" marginBottom={{ base: "20px", md: "40px" }}>
+      Previous Work
+    </Heading>
+    <Box
+      display="flex"
+      flexDirection="column"
+      alignItems="center"
+      justifyContent="center"
+      marginBottom="25px"
+      marginTop="40px"
+    >
+      <Grid
+        templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)" }}
+        gap={8}
+        data-aos="fade-in"
         alignItems="center"
-        justifyContent="center"
-        marginBottom="25px"
-        marginTop="20px"
+        fontWeight="300"
+        maxWidth="800px" // Added maxWidth to limit the width of the grid on larger screens
+        marginX="auto" // Center the grid horizontally
       >
-        <Grid
-          templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
-          gap={8}
-          data-aos="fade-in"
-          alignItems="center"
-          fontWeight="300"
-        >
-          {companies.map((company, index) => (
-            <ClubCard
-              key={index}
-              name={company.caption}
-              description={company.description}
-              link={company.link}
-              logo={company.logo}
-            />
-          ))}
-        </Grid>
-      </Box>
+        {companies.map((company, index) => (
+          <ClubCard
+            key={index}
+            name={company.caption}
+            description={company.description}
+            link={company.link}
+            logo={company.logo}
+          />
+        ))}
+      </Grid>
     </Box>
+  </Box>
   );
 };
 

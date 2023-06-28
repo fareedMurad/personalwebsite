@@ -48,40 +48,35 @@ export default function Home() {
 
   return (
     <ChakraProvider theme={theme}>
-      {isLoading ? (
-        <Center height="100vh" flexDirection="column">
-          <Heading
-            as="h1"
-            size="lg"
-            mb={4}
-            fontWeight="300"
-            color="transparent"
-            bgGradient="linear(to-r, purple.500, cyan.500)"
-            bgClip="text"
-            animation="gradient-animation 3s ease-in-out infinite alternate"
-          >
-            Adrian Kwan
-          </Heading>
-          <Spinner color="purple.500" size="xl" />
-        </Center>
-      ) : (
-        <>
-          <Box maxWidth="100%" width="100%">
-            <Header />
-            <HeroSection />
-            <div id="about-section">
-              <About />
-            </div>
-            <Flex flexDirection="column" alignItems="center">
-              <Divider orientation="horizontal" width="80%" />
-            </Flex>
-            <div id="projects-section">
-              <Projects />
-            </div>
-          </Box>
-          <Footer />
-        </>
-      )}
-    </ChakraProvider>
+  {isLoading ? (
+    <Center height="100vh" flexDirection="column">
+      {/* Loading content */}
+    </Center>
+  ) : (
+    <>
+      <Box maxWidth="100%" width="100%">
+        <Header />
+        <HeroSection />
+        <div id="about-section">
+          <About />
+        </div>
+        <Flex
+          flexDirection={{ base: "column", md: "row" }}
+          alignItems="center"
+          justify="center"
+        >
+          <Divider
+            orientation={{ base: "vertical", md: "horizontal" }}
+            height={{ base: "80%", md: "auto" }}
+          />
+        </Flex>
+        <div id="projects-section">
+          <Projects />
+        </div>
+      </Box>
+      <Footer />
+    </>
+  )}
+</ChakraProvider>
   );
 }

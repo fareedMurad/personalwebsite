@@ -54,20 +54,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               alt="Project Image"
               borderRadius="lg"
               maxHeight="150px"
-              maxWidth="35vh"
+              maxWidth="100vh"
             />
             <Heading size="md" marginTop="15px" fontWeight="700">
               {title}
             </Heading>
             <Text textAlign="center">{description}</Text>
             <Box textAlign="center" className="15px">
-              <Text fontSize="sm" fontWeight="400" mb="2">
+              <Text fontSize="sm" fontWeight="400" mb="4">
                 Technologies/Languages:
               </Text>
               <Stack
                 direction="row"
                 flexWrap="wrap"
-                spacing="2"
+                spacing="3"
                 justifyContent={
                   technologies.length === 1 ? "center" : "flex-start"
                 }

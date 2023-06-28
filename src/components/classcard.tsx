@@ -24,8 +24,9 @@ const ClassCard: React.FC<ClassCardProps> = ({ name, description, link }) => {
           p="4"
           mb="4"
           width="35vh"
-          maxHeight="53vh"
-          minHeight="21vh"
+          minHeight="150px"
+maxHeight="fit-content"
+  height="fit-content"
           fontWeight="300"
           boxShadow="lg" // added shadow
           fontSize="md"
