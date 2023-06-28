@@ -86,7 +86,7 @@ export default function HeroSection() {
               >
                 {bulletPoints[currentIndex]}
               </Text>
-              <Box mt={10} data-aos="fade-up">
+               <Box mt={10} data-aos="fade-up" >
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -124,7 +124,7 @@ export default function HeroSection() {
             </Box>
 
             {/* Image */}
-            <Box flex="1" data-aos="fade-up">
+            <Box flex="1" data-aos="fade-up" > 
               <Image
                 src="https://i.ibb.co/6bYBGDq/IMG-1048-copy.png"
                 alt="Headshot"

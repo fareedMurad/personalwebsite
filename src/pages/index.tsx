@@ -48,35 +48,35 @@ export default function Home() {
 
   return (
     <ChakraProvider theme={theme}>
-  {isLoading ? (
-    <Center height="100vh" flexDirection="column">
-      {/* Loading content */}
-    </Center>
-  ) : (
-    <>
-      <Box maxWidth="100%" width="100%">
-        <Header />
-        <HeroSection />
-        <div id="about-section">
-          <About />
-        </div>
-        <Flex
-          flexDirection={{ base: "column", md: "row" }}
-          alignItems="center"
-          justify="center"
-        >
-          <Divider
-            orientation={{ base: "vertical", md: "horizontal" }}
-            height={{ base: "80%", md: "auto" }}
-          />
-        </Flex>
-        <div id="projects-section">
-          <Projects />
-        </div>
-      </Box>
-      <Footer />
-    </>
-  )}
-</ChakraProvider>
+      {isLoading ? (
+        <Center height="100vh" flexDirection="column">
+          {/* Loading content */}
+        </Center>
+      ) : (
+        <>
+          <Box maxWidth="100%" width="100%">
+            <Header />
+            <HeroSection />
+            <div id="about-section">
+              <About />
+            </div>
+            <Flex
+              flexDirection={{ base: "column", md: "row" }}
+              alignItems="center"
+              justify="center"
+            >
+              <Divider
+                orientation={{ base: "vertical", md: "horizontal" }}
+                height={{ base: "80%", md: "auto" }}
+              />
+            </Flex>
+            <div id="projects-section">
+              <Projects />
+            </div>
+          </Box>
+          <Footer />
+        </>
+      )}
+    </ChakraProvider>
   );
 }

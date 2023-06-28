@@ -46,8 +46,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
   return (
     <Box>
-      <Card maxW="sm" data-aos="zoom-out">
-        <CardBody>
+      <Card maxWidth="sm" className="zoom" >
+        <CardBody >
           <Stack mt="6" spacing="3" align="center" justifyContent="center">
             <Image
               src={typeof image === "string" ? image : image.src}

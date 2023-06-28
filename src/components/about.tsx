@@ -118,7 +118,6 @@ export default function About() {
         alignItems="center"
         justifyContent="center"
         marginBottom="25px"
-        data-aos="zoom-out-up"
         marginTop="50px"
         maxWidth={{ base: "90%", sm: "80%", md: "70%", lg: "50%" }}
         marginLeft="auto"
@@ -131,23 +130,23 @@ export default function About() {
             padding: "0 20px", // Added padding for better readability on smaller screens
           }}
         >
-          <Text fontSize={{ base: "xl", md: "2xl" }} fontWeight="300">
+          <Text fontSize={{ base: "xl", md: "2xl" }} fontWeight="300" data-aos="zoom-out-up">
             My name is Adrian Kwan and I&apos;m currently studying Computer
-            Science @{" "}
-            <Text as="em" className="highlight">
+            Science @
+            <Text as="em" className="highlight" data-aos="zoom-out-up">
               UC Berkeley
             </Text>
-            . <br></br>I am an aspiring full-stack{" "}
-            <Text as="em" className="highlight">
+            . <br></br>I am an aspiring full-stack
+            <Text as="em" className="highlight" data-aos="zoom-out-up ">
               software engineer
-            </Text>{" "}
-            and tech{" "}
-            <Text as="em" className="highlight">
+            </Text>
+            and tech
+            <Text as="em" className="highlight" data-aos="zoom-out-up">
               entrepreneur
             </Text>
             .
           </Text>
-          <Text fontSize={{ base: "xl", md: "2xl" }} fontWeight="300">
+          <Text fontSize={{ base: "xl", md: "2xl" }} fontWeight="300" data-aos="zoom-out-up">
             I&apos;m interested in LLMs, computer vision, zero knowledge proofs,
             and decentralized finance.
           </Text>
@@ -169,16 +168,16 @@ export default function About() {
             onClick={onOpen}
           >
             <Text fontSize="xl" fontWeight="400">
-              {" "}
-              View Resume{" "}
+              
+              View Resume
             </Text>
           </motion.button>
         </Box>
       </Box>
 
       <CompaniesSection />
-
-      <Box data-aos="zoom-in-left" marginTop={{ base: "5vh", md: "10vh" }}>
+      {/* data-aos="zoom-in-left" */}
+      <Box  marginTop={{ base: "5vh", md: "10vh" }}>
         <Heading
           size="lg"
           textAlign="center"
@@ -220,6 +219,9 @@ export default function About() {
           </Stack>
         </Box>
       </Box>
+
+
+
 
       <Box data-aos="fade-up" marginTop="10vh">
         <Heading size="lg" textAlign="center" fontWeight="100">

@@ -53,7 +53,8 @@ const companies = [
 
 const CompaniesSection = () => {
   return (
-    <Box data-aos="fade-right">
+    // data-aos="fade-right"
+    <Box>
     <Heading size="lg" textAlign="center" fontWeight="100" marginBottom={{ base: "20px", md: "40px" }}>
       Previous Work
     </Heading>
